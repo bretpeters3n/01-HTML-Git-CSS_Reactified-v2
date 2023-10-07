@@ -120,7 +120,18 @@ N/A
    ```sh
    git clone https://github.com/bretpeters3n/01-HTML-Git-CSS_Reactified-v2.git
    ```
-2. Open the `index.html` file in your favorite web browser.
+2. Change directory into project directory
+   ```sh
+   cd 01-HTML-Git-CSS_Reactified-v2
+   ```
+3. Install dependencies
+   ```sh
+   npm install
+   ```
+4. Run project locally
+   ```sh
+   npm run dev
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
