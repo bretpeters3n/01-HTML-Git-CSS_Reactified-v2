@@ -25,9 +25,9 @@
 
 # 01-HTML-Git-CSS_Reactified-v2
   <p align="center">
+    <img src="https://img.shields.io/badge/VITE-purple"/>
     <img src="https://img.shields.io/badge/HTML-orange"/>
     <img src="https://img.shields.io/badge/CSS-yellow"/>
-    <img src="https://img.shields.io/badge/VITE-purple"/>
   <p align="center">
     This website is a remake of my Full Stack Web Dev Bootcamp assignment '01-HTML-Git-CSS' done in React. This website is a static HTML website using semantic tags and minimal CSS.
     <br />
@@ -78,6 +78,7 @@ This website is a static HTML website using semantic tags and minimal CSS. This 
 
 <!-- BUILT WITH -->
 ### Built With
+* VITE
 * HTML
 * CSS
 
