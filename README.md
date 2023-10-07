@@ -31,6 +31,8 @@
   <p align="center">
     This website is a remake of my Full Stack Web Dev Bootcamp assignment '01-HTML-Git-CSS' done in React. This website is a static HTML website using semantic tags and minimal CSS.
     <br />
+    I used container queries here as a replacement for media queries. In the future I will explore more container query uses.
+    <br />
     <br />
     <a href="https://bretpeters3n.github.io/01-HTML-Git-CSS_Reactified-v2/">View Demo</a>
   </p>
