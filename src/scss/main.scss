@@ -1,0 +1,190 @@
+:root {
+    --mobile-margin-lr: 1em;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    container-type: inline-size;
+    container-name: bodyContainer;
+    background-color: #d9dcd6;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    h1 {
+        display: block;
+        text-align: center;
+        font-size: clamp(2rem, 6cqi, 3rem);
+        .seo {
+            color: #d9dcd6;
+        }
+    }
+    div {
+        padding-top: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        ul {
+            list-style-type: none;
+            li {
+                display: block;
+                text-align: center;
+                margin: 0 0px 6px 0;
+            }
+        }
+    }
+}
+
+.hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: var(--mobile-margin-lr);
+    background-image: url("../src/assets/images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+main {
+    padding-top: var(--mobile-margin-lr);
+    width: calc(100cqw - var(--mobile-margin-lr) * 2);
+    display: inline-block;
+    margin-left: var(--mobile-margin-lr);
+}
+
+aside {
+    margin: 0 auto;
+    padding: var(--mobile-margin-lr);
+    clear: both;
+    float: top;
+    width: calc(100cqw - var(--mobile-margin-lr) * 2);
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+    .benefit-lead, .benefit-brand, .benefit-cost {
+        margin-bottom: 32px;
+        color: #ffffff;
+        h3 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 150px;
+        }
+        p {
+            margin: 0 auto;
+            text-align: center;
+            max-width: 246px;
+        }
+    }
+}
+
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    img {
+        max-height: 200px;
+        padding-bottom: 20px;
+    }
+    h2 {
+        margin: 0 0 20px;
+        font-size: 36px;
+    }
+    
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@container bodyContainer (min-width: 568px) {
+    header {
+        h1 {
+            display: inline-block;
+            text-align: left;
+        }
+        div {
+            float: right;
+            ul {
+                li {
+                    display: inline-block;
+                    text-align: left;
+                    margin: 0 24px 0 0;
+                }
+            }
+        }
+    }
+    .hero {
+        height: calc(5792 / 8688)*100cqw;
+    }
+    aside {
+        display: flex;
+        .benefit-lead, .benefit-brand, .benefit-cost {
+            p {
+                margin: 0 1em;
+            }   
+        }
+    }
+    .benefit-lead, .benefit-brand, .benefit-cost {
+        width: 33%;
+    }
+}
+
+@container bodyContainer (min-width: 769px) {
+    main {
+        width: 75%;
+        padding-top: unset;
+    }
+    
+    aside {
+        display: unset;
+        margin-right: var(--mobile-margin-lr);
+        float: right;
+        width: 20%;
+        .benefit-lead, .benefit-brand, .benefit-cost {
+            width: unset;
+            p {
+                margin: unset;
+                text-align: left;
+            }
+        }
+    }
+}
